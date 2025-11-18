@@ -1,0 +1,6 @@
+gh pr create \
+  --repo OWNER/server-deployment \
+  --base main \
+  --head config-update \
+  --title "Server config changes" \
+  --body "This PR includes updated configuration files for deployment."
