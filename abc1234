@@ -1,0 +1,30 @@
+Create the branch, commit something (optional), then set upstream on push:
+
+git checkout -b staging
+git push --set-upstream origin staging
+
+
+Equivalent to git push -u.
+
+✅ WAY 2 — Create branch and set upstream in a single command (without switching)
+git branch staging
+git push -u origin staging
+
+
+You create the branch but don’t switch to it until needed.
+
+✅ WAY 3 — Use git checkout --track to auto-configure upstream
+
+If the branch already exists on remote and you want to track it:
+
+git checkout --track origin/staging
+
+
+If it doesn’t exist yet, you can create & publish it like this:
+
+git checkout -b staging
+git push origin staging
+git branch --set-upstream-to=origin/staging
+
+
+If you want, I can also show GitHub Desktop, VS Code, or GitHub UI methods.
